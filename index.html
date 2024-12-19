@@ -84,8 +84,10 @@
 
           <!-- Mobile Menu Toggle -->
           <div class="md:hidden flex items-center">
-            <button>
-              class="text-gray-700 focus:outline-none"
+            <button
+              type="button"
+              aria-label="Toggle navigation"
+              class="flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-600 focus:outline-none focus:shadow-outline"
               id="mobile-menu-button"
             >
               <svg
@@ -127,6 +129,7 @@
           >
           <a
             href="cosmetic-products.html"
+            ```html
             class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
             >Cosmetic Products</a
           >
@@ -181,79 +184,98 @@
         <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div class="grid md:grid-cols-3 gap-2">
           <style>
-  .box-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+            .box-effect {
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
 
-  .box-effect:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
+            .box-effect:hover {
+              transform: scale(1.05);
+              box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            }
 
-  .box-effect img {
-    transition: transform 0.3s ease;
-  }
+            .box-effect img {
+              transition: transform 0.3s ease;
+            }
 
-  .box-effect:hover img {
-    transform: scale(1.1);
-  }
-</style>
+            .box-effect:hover img {
+              transform: scale(1.1);
+            }
+          </style>
 
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/kids2.webp"
-    alt="Hair Styling"
-    class="w-full h-60 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Kids' Haircuts</h3>
-  <p>Fun and stylish cuts designed to keep kids looking sharp and feeling great</p>
-</div>
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/women.webp"
-    alt="Makeup"
-    class="w-full h-60 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Professional Makeup</h3>
-  <p>Flawless makeup application for weddings, events, and everyday glamour</p>
-</div>
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/kids1.jpg"
-    alt="Barbering"
-    class="w-full h-60 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Children's Hair Styling</h3>
-  <p>Creative and trendy hairstyles for kids, tailored to their unique personalities</p>
-</div>
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/men10.jpg"
-    alt="Barbering"
-    class="w-full h-60 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Men's Barbering</h3>
-  <p>Classic and modern haircuts for men, crafted with precision and care</p>
-</div>
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/black-women.jpeg"
-    alt="Barbering"
-    class="w-80 h-80 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Black Women's Haircare</h3>
-  <p>Specialized treatments and styles to celebrate and care for natural beauty</p>
-</div>
-<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
-  <img
-    src="images/salon5.jpg"
-    alt="Barbering"
-    class="w-full h-60 object-cover"
-  />
-  <h3 class="text-xl font-semibold mb-2">Salon Experience</h3>
-  <p>Relaxing salon services including styling, coloring, wig installation, and treatments for all hair types</p>
-</div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/kids2.webp"
+              alt="Hair Styling"
+              class="w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Kids' Haircuts</h3>
+            <p>
+              Fun and stylish cuts designed to keep kids looking sharp and
+              feeling great
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/women.webp"
+              alt="Makeup"
+              class="w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Professional Makeup</h3>
+            <p>
+              Flawless makeup application for weddings, events, and everyday
+              glamour
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/kids1.jpg"
+              alt="Barbering"
+              class="w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Children's Hair Styling</h3>
+            <p>
+              Creative and trendy hairstyles for kids, tailored to their unique
+              personalities
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/men10.jpg"
+              alt="Barbering"
+              class="w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Men's Barbering</h3>
+            < ```html
+            <p>
+              Classic and modern haircuts for men, crafted with precision and
+              care
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/black-women.jpeg"
+              alt="Barbering"
+              class="w-80 h-80 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Black Women's Haircare</h3>
+            <p>
+              Specialized treatments and styles to celebrate and care for
+              natural beauty
+            </p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+            <img
+              src="images/salon5.jpg"
+              alt="Barbering"
+              class="w-full h-60 object-cover"
+            />
+            <h3 class="text-xl font-semibold mb-2">Salon Experience</h3>
+            <p>
+              Relaxing salon services including styling, coloring, wig
+              installation, and treatments for all hair types
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -307,72 +329,70 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
         <style>
-  .team-member {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+          .team-member {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
 
-  .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  }
+          .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+          }
 
-  .team-member img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
+          .team-member img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+          }
 
-  .team-member:hover img {
-    transform: scale(1.1);
-    opacity: 0.9;
-  }
+          .team-member:hover img {
+            transform: scale(1.1);
+            opacity: 0.9;
+          }
 
-  .team-member h3 {
-    transition: color 0.3s ease;
-  }
+          .team-member h3 {
+            transition: color 0.3s ease;
+          }
 
-  .team-member:hover h3 {
-    color: #ff7f50; /* Coral or any preferred highlight color */
-  }
-</style>
+          .team-member:hover h3 {
+            color: #ff7f50; /* Coral or any preferred highlight color */
+          }
+        </style>
 
-<div class="grid md:grid-cols-4 gap-8">
-  <div class="text-center team-member">
-    <img
-      src="images/teamhair.png"
-      alt="Team Member"
-      class="w-full h-60 object-cover rounded-full"
-    />
-    <h3 class="text-xl font-semibold">Emily Johnson</h3>
-    <p class="text-gray-600">Lead Hairstylist</p>
-  </div>
-  <div class="text-center team-member">
-    <img
-      src="images/masterbar.jpg"
-      alt="Team Member"
-      class="w-full h-60 object-cover rounded-full"
-    />
-    <h3 class="text-xl font-semibold">Michael Rodriguez</h3>
-    <p class="text-gray-600">Master Barber</p>
-  </div>
-  <div class="text-center team-member">
-    <img
-      src="images/teammakeup.jpg"
-      alt="Team Member"
-      class="w-full h-60 object-cover rounded-full"
-    />
-    <h3 class="text-xl font-semibold">Sarah Kim</h3>
-    <p class="text-gray-600">Makeup Artist</p>
-  </div>
-  <div class="text-center team-member">
-    <img
-      src="images/teambraid.jpg"
-      alt="Team Member"
-      class="w-full h-60 object-cover rounded-full"
-    />
-    <h3 class="text-xl font-semibold">Irene Chen</h3>
-    <p class="text-gray-600">Braiding Specialist</p>
-  </div>
-</div>
-
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="text-center team-member">
+            <img
+              src="images/teamhair.png"
+              alt="Team Member"
+              class="w-full h-60 object-cover rounded-full"
+            />
+            <h3 class="text-xl font-semibold">Emily Johnson</h3>
+            <p class="text-gray-600">Lead Hairstylist</p>
+          </div>
+          <div class="text-center team-member">
+            <img
+              src="images/masterbar.jpg"
+              alt="Team Member"
+              class="w-full h-60 object-cover rounded-full"
+            />
+            <h3 class="text-xl font-semibold">Michael Rodriguez</h3>
+            <p class="text-gray-600">Master Barber</p>
+          </div>
+          <div class="text-center team-member">
+            <img
+              src="images/te ammakeup.jpg"
+              alt="Team Member"
+              class="w-full h-60 object-cover rounded-full"
+            />
+            <h3 class="text-xl font-semibold">Sarah Kim</h3>
+            <p class="text-gray-600">Makeup Artist</p>
+          </div>
+          <div class="text-center team-member">
+            <img
+              src="images/teambraid.jpg"
+              alt="Team Member"
+              class="w-full h-60 object-cover rounded-full"
+            />
+            <h3 class="text-xl font-semibold">Irene Chen</h3>
+            <p class="text-gray-600">Braiding Specialist</p>
+          </div>
         </div>
       </div>
     </section>
@@ -423,35 +443,40 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
-  <div class="container mx-auto px-4 text-center">
-    <div class="flex justify-center space-x-6 mb-4">
-      <a 
-        href="https://www.instagram.com/yourpage" 
-        target="_blank" 
-        class="hover:text-pink-500 transition duration-300"
-      >
-        Instagram
-      </a>
-      <a 
-        href="https://www.facebook.com/yourpage" 
-        target="_blank" 
-        class="hover:text-pink-500 transition duration-300"
-      >
-        Facebook
-      </a>
-      <a 
-        href="https://www.twitter.com/yourpage" 
-        target="_blank" 
-        class="hover:text-pink-400 transition duration-300"
-      >
-        Twitter
-      </a>
-    </div>
-  </div>
-  </p>
-  <p class="text-center">For inquiries, email us at <a class="hover:text-blue-400 transition duration-300" href="mailto:support@mizjay.com">@mizjayglitterglam.com</a> or call 0559912316-0502733515.</p>
-        </p>
+      <div class="container mx-auto px-4 text-center">
+        <div class="flex justify-center space-x-6 mb-4">
+          <a
+            href="https://www.instagram.com/yourpage"
+            target="_blank"
+            class="hover:text-pink-500 transition duration-300"
+          >
+            Instagram
+          </a>
+          <a
+            href="https://www.facebook.com/yourpage"
+            target="_blank"
+            class="hover:text-pink-500 transition duration-300"
+          >
+            Facebook
+          </a>
+          <a
+            href="https://www.twitter.com/yourpage"
+            target="_blank"
+            class="hover:text-pink-400 transition duration-300"
+          >
+            Twitter
+          </a>
+        </div>
       </div>
+      <p class="text-center">
+        For inquiries, email us at
+        <a
+          class="hover:text-blue-400 transition duration-300"
+          href="mailto:support@mizjay.com"
+          >support@mizjayglitterglam.com</a
+        >
+        or call 0559912316-0502733515.
+      </p>
     </footer>
     <script src="js/script.js"></script>
   </body>
