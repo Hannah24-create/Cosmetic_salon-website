@@ -3,60 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cosmetic Products | Radiant Beauty</title>
+    <title>Cosmetic Products | Mizjay's Glitterglam beauty studio</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="bg-gray-50 font-sans">
+    <!-- Navigation (Same as main page) -->
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
-      <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center">
-            <div class="flex">
-              <a href="index.html" class="flex items-center">
-                <img
-                  src="images/logo_salon.png"
-                  alt=""
-                  class="h-12 w-12 mr-3"
+      <div class="max-w-10xl mx-auto px-3">
+        <div class="flex justify-between items-center">
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-7">
+            <a
+              href="index.html"
+              class="flex items-center py-4 px-2 text-gray-700 hover:text-pink-500 transition duration-300"
+            >
+              <img
+                src="images/logo_salon.png"
+                alt=""
+                class="h-12 w-12 rounded-full mr-2"
+              />
+              <span class="font-semibold text-xl tracking-tight"
+                >Mizjay's Glitterglam beauty studio</span
+              >
+            </a>
+          </div>
+
+          <!-- Primary Navigation -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a
+              href="cosmetic-products.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Cosmetic Products
+            </a>
+            <a
+              href="hair-cuts.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Hair Cutz
+            </a>
+            <a
+              href="braiding-styles.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Women Braides
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="hidden md:flex items-center">
+            <a
+              href="book-appointment.html"
+              class="py-2 px-4 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-400 transition duration-300 font-medium"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="md:hidden flex items-center">
+            <button
+              class="text-gray-700 focus:outline-none"
+              id="mobile-menu-button"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
                 />
-                <span
-                  class="font-semibold text-2xl text-gray-700 hover:text-pink-500 text-lg font-medium"
-                  >Mizjay's Glitterglam beauty studio</span
-                >
-              </a>
-            </div>
-
-            <div class="hidden md:flex space-x-8">
-              <a
-                href="index.html"
-                class="text-gray-700 hover:text-pink-500 text-lg font-medium"
-                >Home</a
-              >
-              <a
-                href="hair-cuts.html"
-                class="text-gray-700 hover:text-pink-500 text-lg font-medium"
-                >Hair Cutz</a
-              >
-              <a
-                href="braiding-styles.html"
-                class="text-gray-700 hover:text-pink-500 text-lg font-medium"
-                >Women Braides</a
-              >
-            </div>
-
-            <div class="hidden md:flex">
-              <a
-                href="index.html"
-                class="py-2 px-4 bg-pink-600 text-white rounded hover:bg-pink-500 transition duration-300"
-                >Book Appointment</a
-              >
-            </div>
+              </svg>
+            </button>
           </div>
         </div>
-      </header>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col items-center space-y-2 py-4">
+          <a
+            href="cosmetic-products.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Cosmetic Products</a
+          >
+          <a
+            href="hair-cuts.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Hair Cutz</a
+          >
+          <a
+            href="braiding-styles.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Women Braides</a
+          >
+          <a
+            href="book-appointment.html"
+            class="py-2 px-4 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-400 transition duration-300 font-medium"
+            >Book Appointment</a
+          >
+        </div>
+      </div>
     </nav>
     <!-- Products Hero Section -->
     <header
@@ -187,4 +244,5 @@
       <h6 class="text-1xl text-white text-center">copyright @ salon 2025</h6>
     </footer>
   </body>
+  <script src="js/script.js"></script>
 </html>
