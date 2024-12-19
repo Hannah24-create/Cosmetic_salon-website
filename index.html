@@ -9,6 +9,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      .team-member {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .team-member:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+      }
+    
+      .team-member img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+    
+      .team-member:hover img {
+        transform: scale(1.1);
+        opacity: 0.9;
+      }
+    
+      .team-member h3 {
+        transition: color 0.3s ease;
+      }
+    
+      .team-member:hover h3 {
+        color: #ff7f50; /* Coral or any preferred highlight color */
+      }
+
+      .box-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .box-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .box-effect img {
+    transition: transform 0.3s ease;
+  }
+
+  .box-effect:hover img {
+    transform: scale(1.1);
+  }
+    </style>
   </head>
   <body class="bg-gray-50 font-sans">
     <!-- Navigation -->
@@ -84,7 +129,7 @@
 
           <!-- Mobile Menu Toggle -->
           <div class="md:hidden flex items-center">
-            <button>
+            <button
               class="text-gray-700 focus:outline-none"
               id="mobile-menu-button"
             >
@@ -180,26 +225,6 @@
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
         <div class="grid md:grid-cols-3 gap-2">
-          <style>
-  .box-effect {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .box-effect:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .box-effect img {
-    transition: transform 0.3s ease;
-  }
-
-  .box-effect:hover img {
-    transform: scale(1.1);
-  }
-</style>
-
 <div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
   <img
     src="images/kids2.webp"
@@ -306,33 +331,7 @@
     <section id="team" class="py-16 bg-white">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
-        <style>
-  .team-member {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
 
-  .team-member:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  }
-
-  .team-member img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  .team-member:hover img {
-    transform: scale(1.1);
-    opacity: 0.9;
-  }
-
-  .team-member h3 {
-    transition: color 0.3s ease;
-  }
-
-  .team-member:hover h3 {
-    color: #ff7f50; /* Coral or any preferred highlight color */
-  }
-</style>
 
 <div class="grid md:grid-cols-4 gap-8">
   <div class="text-center team-member">
