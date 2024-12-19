@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mizjay's Glitterglam beauty studio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div class="max-w-10xl mx-auto px-3">
+        <div class="flex justify-between items-center">
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-7">
+            <a
+              href="index.html"
+              class="flex items-center py-4 px-2 text-gray-700 hover:text-pink-500 transition duration-300"
+            >
+              <img
+                src="images/logo_salon.png"
+                alt=""
+                class="h-12 w-12 rounded-full mr-2"
+              />
+              <span class="font-semibold text-xl tracking-tight"
+                >Mizjay's Glitterglam beauty studio</span
+              >
+            </a>
+          </div>
+
+          <!-- Primary Navigation -->
+          <div class="hidden md:flex items-center space-x-3">
+            <a
+              href="#services"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Services
+            </a>
+            <a
+              href="#booking"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Book Now
+            </a>
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Contact
+            </a>
+            <a
+              href="cosmetic-products.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Cosmetic Products
+            </a>
+            <a
+              href="hair-cuts.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Hair Cutz
+            </a>
+            <a
+              href="braiding-styles.html"
+              class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >
+              Women Braides
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="hidden md:flex items-center">
+            <a
+              href="#booking"
+              class="py-2 px-4 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-400 transition duration-300 font-medium"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="md:hidden flex items-center">
+            <button>
+              class="text-gray-700 focus:outline-none"
+              id="mobile-menu-button"
+            >
+              <svg
+                class="h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="hidden md:hidden" id="mobile-menu">
+        <div class="flex flex-col items-center space-y-2 py-4">
+          <a
+            href="#services"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Services</a
+          >
+          <a
+            href="#booking"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Book Now</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Contact</a
+          >
+          <a
+            href="cosmetic-products.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Cosmetic Products</a
+          >
+          <a
+            href="hair-cuts.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Hair Cutz</a
+          >
+          <a
+            href="braiding-styles.html"
+            class="text-gray-700 hover:text-pink-500 font-medium py-2 px-2 transition duration-300"
+            >Women Braides</a
+          >
+          <a
+            href="#booking"
+            class="py-2 px-4 bg-pink-500 text-white rounded-lg shadow-lg hover:bg-pink-400 transition duration-300 font-medium"
+            >Book Appointment</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="bg-cover bg-center h-screen"
+      style="
+        background-image: url('https://images.pexels.com/photos/13068358/pexels-photo-13068358.jpeg?auto=compress&cs=tinysrgb&w=600');
+      "
+    >
+      <div class="bg-black bg-opacity-50 h-full flex items-center">
+        <div class="px-4 max-w-xl mx-auto text-center text-white">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">
+            Transform Your Look
+          </h1>
+          <p class="text-xl mb-8">
+            Professional beauty and barbering services tailored to your unique
+            style
+          </p>
+          <a
+            href="#booking"
+            class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600 transition duration-300"
+          >
+            Schedule Now
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-2">
+          <style>
+  .box-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .box-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .box-effect img {
+    transition: transform 0.3s ease;
+  }
+
+  .box-effect:hover img {
+    transform: scale(1.1);
+  }
+</style>
+
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/kids2.webp"
+    alt="Hair Styling"
+    class="w-full h-60 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Kids' Haircuts</h3>
+  <p>Fun and stylish cuts designed to keep kids looking sharp and feeling great</p>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/women.webp"
+    alt="Makeup"
+    class="w-full h-60 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Professional Makeup</h3>
+  <p>Flawless makeup application for weddings, events, and everyday glamour</p>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/kids1.jpg"
+    alt="Barbering"
+    class="w-full h-60 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Children's Hair Styling</h3>
+  <p>Creative and trendy hairstyles for kids, tailored to their unique personalities</p>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/men10.jpg"
+    alt="Barbering"
+    class="w-full h-60 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Men's Barbering</h3>
+  <p>Classic and modern haircuts for men, crafted with precision and care</p>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/black-women.jpeg"
+    alt="Barbering"
+    class="w-80 h-80 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Black Women's Haircare</h3>
+  <p>Specialized treatments and styles to celebrate and care for natural beauty</p>
+</div>
+<div class="bg-gray-100 p-6 rounded-lg text-center box-effect">
+  <img
+    src="images/salon5.jpg"
+    alt="Barbering"
+    class="w-full h-60 object-cover"
+  />
+  <h3 class="text-xl font-semibold mb-2">Salon Experience</h3>
+  <p>Relaxing salon services including styling, coloring, wig installation, and treatments for all hair types</p>
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Book an Appointment
+        </h2>
+        <div class="max-w-lg mx-auto bg-white p-8 rounded-lg shadow-md">
+          <form id="bookingForm" class="space-y-4">
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              class="w-full p-3 border rounded"
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              class="w-full p-3 border rounded"
+            />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              required
+              class="w-full p-3 border rounded"
+            />
+            <select class="w-full p-3 border rounded" required>
+              <option value="">Select Service</option>
+              <option value="hair">Hair Styling</option>
+              <option value="makeup">Makeup</option>
+              <option value="barber">Barbering</option>
+            </select>
+            <input type="date" class="w-full p-3 border rounded" required />
+            <button
+              type="submit"
+              class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600"
+            >
+              Confirm Booking
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Expert Team</h2>
+        <style>
+  .team-member {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .team-member img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .team-member:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  .team-member h3 {
+    transition: color 0.3s ease;
+  }
+
+  .team-member:hover h3 {
+    color: #ff7f50; /* Coral or any preferred highlight color */
+  }
+</style>
+
+<div class="grid md:grid-cols-4 gap-8">
+  <div class="text-center team-member">
+    <img
+      src="images/teamhair.png"
+      alt="Team Member"
+      class="w-full h-60 object-cover rounded-full"
+    />
+    <h3 class="text-xl font-semibold">Emily Johnson</h3>
+    <p class="text-gray-600">Lead Hairstylist</p>
+  </div>
+  <div class="text-center team-member">
+    <img
+      src="images/masterbar.jpg"
+      alt="Team Member"
+      class="w-full h-60 object-cover rounded-full"
+    />
+    <h3 class="text-xl font-semibold">Michael Rodriguez</h3>
+    <p class="text-gray-600">Master Barber</p>
+  </div>
+  <div class="text-center team-member">
+    <img
+      src="images/teammakeup.jpg"
+      alt="Team Member"
+      class="w-full h-60 object-cover rounded-full"
+    />
+    <h3 class="text-xl font-semibold">Sarah Kim</h3>
+    <p class="text-gray-600">Makeup Artist</p>
+  </div>
+  <div class="text-center team-member">
+    <img
+      src="images/teambraid.jpg"
+      alt="Team Member"
+      class="w-full h-60 object-cover rounded-full"
+    />
+    <h3 class="text-xl font-semibold">Irene Chen</h3>
+    <p class="text-gray-600">Braiding Specialist</p>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+            <p class="mb-2">📍 123 Beauty Lane, Style City</p>
+            <p class="mb-2">📞 (555) 123-4567</p>
+            <p class="mb-2">✉️ hello@radiantbeauty.com</p>
+            <div class="mt-6">
+              <h4 class="font-semibold mb-2">Business Hours</h4>
+              <p>Mon-Fri: 9am - 8pm</p>
+              <p>Sat: 10am - 6pm</p>
+              <p>Sun: Closed</p>
+            </div>
+          </div>
+          <div>
+            <form class="space-y-4">
+              <input
+                type="text"
+                placeholder="Your Name"
+                class="w-full p-3 border rounded"
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full p-3 border rounded"
+              />
+              <textarea
+                placeholder="Your Message"
+                class="w-full p-3 border rounded h-40"
+              ></textarea>
+              <button
+                class="w-full bg-pink-500 text-white p-3 rounded hover:bg-pink-600"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <div class="flex justify-center space-x-6 mb-4">
+      <a 
+        href="https://www.instagram.com/yourpage" 
+        target="_blank" 
+        class="hover:text-pink-500 transition duration-300"
+      >
+        Instagram
+      </a>
+      <a 
+        href="https://www.facebook.com/yourpage" 
+        target="_blank" 
+        class="hover:text-pink-500 transition duration-300"
+      >
+        Facebook
+      </a>
+      <a 
+        href="https://www.twitter.com/yourpage" 
+        target="_blank" 
+        class="hover:text-pink-400 transition duration-300"
+      >
+        Twitter
+      </a>
+    </div>
+  </div>
+  </p>
+  <p class="text-center">For inquiries, email us at <a class="hover:text-blue-400 transition duration-300" href="mailto:support@mizjay.com">@mizjayglitterglam.com</a> or call 0559912316-0502733515.</p>
+        </p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

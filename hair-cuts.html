@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Styles |Mizjay's Glitterglam beauty studio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <!-- [Previous navigation code] -->
+      <!-- Navigation -->
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <div class="flex space-x-7">
+            <a
+              href=""
+              class="flex items-center py-4 px-2 text-gray-700 hover:text-pink-500 text-lg font-medium"
+            >
+              <img src="images/logo_salon.png" alt="" class="h-10 w-10 mr-5" />
+              <span>Mizjay's Glitterglam beauty studio</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-4">
+              <a
+                href="index.html"
+                class="py-2 px-2 text-gray-700 hover:text-pink-500 text-lg font-medium"
+                >Home</a
+              >
+              <a
+                href="cosmetic-products.html"
+                class="py-2 px-2 text-gray-700 hover:text-pink-500 text-lg font-medium"
+                >Cosmetic Products</a
+              >
+              <a
+                href="braiding-styles.html"
+                class="py-2 px-2 text-gray-700 hover:text-pink-500 text-lg font-medium"
+                >Women Braides</a
+              >
+            </div>
+          </div>
+          <div class="hidden md:flex items-center space-x-3">
+            <a
+              href="index.html"
+              class="py-2 px-4 bg-pink-500 text-white rounded hover:bg-pink-400 transition duration-300"
+            >
+              Book Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hairstyles Hero -->
+    <header
+      class="bg-cover bg-center h-80"
+      style="background-image: url('/api/placeholder/1600/400')"
+    >
+      <div
+        class="bg-blue-800 bg-opacity-50 h-full flex items-center justify-center"
+      >
+        <h1 class="text-4xl font-bold text-white-500">
+          Stunning Hair Styles for Every Occasion
+        </h1>
+      </div>
+    </header>
+
+    <!-- Hairstyle Categories -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Women's Hairstyles -->
+        <style>
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+
+  .card h2 {
+    transition: color 0.3s ease;
+  }
+
+  .card:hover h2 {
+    color: #ff7f50; /* Coral or any preferred highlight color */
+  }
+</style>
+
+<div class="bg-white shadow-lg rounded-lg overflow-hidden card">
+  <img
+    src="images/black-women-removebg-preview.png"
+    alt="Women's Hairstyles"
+    class="w-full h-50 object-cover"
+  />
+  <div class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Women's Styles</h2>
+    <ul class="space-y-2">
+      <li>💁‍♀️ Layered Cuts</li>
+      <li>💁‍♀️ Balayage Highlights</li>
+      <li>💁‍♀️ Pixie Cuts</li>
+      <li>💁‍♀️ Long Waves</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Men's Hairstyles -->
+<div class="bg-white shadow-lg rounded-lg overflow-hidden card">
+  <img
+    src="images/men4-removebg-preview.png"
+    alt="Men's Hairstyles"
+    class="w-full h-50 object-cover"
+  />
+  <div class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Men's Styles</h2>
+    <ul class="space-y-2">
+      <li>💈 Fade Haircuts</li>
+      <li>💈 Undercuts</li>
+      <li>💈 Textured Crops</li>
+      <li>💈 Classic Pompadours</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Bridal & Special Occasion -->
+<div class="bg-white shadow-lg rounded-lg overflow-hidden card">
+  <img
+    src="images/men2-removebg-preview.png"
+    alt="kids Hairstyles"
+    class="w-full h-50 object-cover"
+  />
+  <div class="p-6">
+    <h2 class="text-2xl font-semibold mb-4">Special Occasion Styles</h2>
+    <ul class="space-y-2">
+      <li>👰 Bridal Updos</li>
+      <li>👰 Formal Evening Styles</li>
+      <li>👰 Red Carpet Looks</li>
+      <li>👰 Elegant Braids</li>
+    </ul>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Style Gallery -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12">Our Style Gallery</h2>
+        <style>
+  .gallery-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .gallery-img:hover::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    z-index: 1;
+  }
+
+  .gallery-img-container {
+    position: relative;
+    overflow: hidden;
+  }
+</style>
+
+<div class="grid md:grid-cols-4 gap-4">
+  <div class="gallery-img-container">
+    <img
+      src="images/men5-removebg-preview.png"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/men6.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/men8.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/men11.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/kids1.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/men10.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/kids2.webp"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+  <div class="gallery-img-container">
+    <img
+      src="images/kids4.jpg"
+      alt="Hairstyle"
+      class="w-full h-64 object-cover rounded-lg gallery-img"
+    />
+  </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-6">Find Your Perfect Style</h2>
+        <p class="text-xl mb-8">
+          Book a free consultation with our expert stylists to discover your
+          ideal look.
+        </p>
+        <a
+          href="#"
+          class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600"
+        >
+          Book Consultation
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <h6 class="text-1xl text-white text-center">copyright @ salon 2025</h6>
+    </footer>
+  </body>
+</html>
